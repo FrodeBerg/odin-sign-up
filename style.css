@@ -1,16 +1,27 @@
 :root{
-    --grey: #060606;
-    --grey-transparent: #060606ca;
+    --grey: #262626;
+    --grey-transparent: #000000ca;
+    --text-color: #f27a11;
+}
+
+@font-face {
+    font-family: 'pixel';
+    src: url('pixPixelFJVerdana12pt.woff2') format('woff2'),
+        url('pixPixelFJVerdana12pt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
     margin: 0;
     overflow: hidden;
-
+    font-family: pixel;
+    background-color: black;
+    color: var(--text-color);
 }
 
 main {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -18,18 +29,33 @@ main {
 
 img {
     height: 100vh;
-    position: absolute;
-    left: -25%;
     z-index: -1;
 }
 
 h1 {
-    color: green;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 20%;
+    background-color: var(--grey-transparent);
     text-align: center;
     border-radius: 5px;
-    margin-top: 30%;
-    padding: 30px;
-    background-color: var(--grey-transparent);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    position: absolute;
+    top: 94%;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
 }
 
 .container {
@@ -40,9 +66,8 @@ h1 {
     display: flex;
 }
 
-.left, 
-.right {
-    width: 50%;
+.left {
+    position: relative;
 }
 
 .right {
