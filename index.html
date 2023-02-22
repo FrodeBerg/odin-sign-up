@@ -18,13 +18,33 @@
         <div class="right">
             <h2>Sign up to get started!</h2>
             <form action="#">
-                <input type="text" name="desolar" id="first">
-                <input type="text" name="desolar" id="last">
-                <input type="email" name="desolar">
-                <input type="number" name="desolar" id="phone">
-                <input type="password" name="desolar" id="password">
-                <input type="password" name="desolarr" id="confirm">
-            </form>        
+                <div>
+                    <label for="first">First name</label>
+                    <input type="text" name="first" id="first" required placeholder=" " minlength="3" maxlength="25">
+                </div>
+                <div>
+                    <label for="last">Last name</label>
+                    <input type="text" name="last" id="last" required placeholder=" " minlength="3" maxlength="25">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required placeholder=" ">
+                </div>
+                <div>
+                    <label for="number">Phone number</label>
+                    <input type="text" name="number" id="phone" required placeholder=" ">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required placeholder=" " minlength="8">
+                </div>
+                <div>
+                    <label for="confirm">Confirm password</label>
+                    <input type="password" name="confirm" id="confirm" required placeholder=" " minlength="8">
+                </div>
+                <input type="submit" name="submit" id="confirm">
+            </form>      
+            <p>Already habe an account? <a href="#">Log in</a></p>  
         </div>
 
     </main>
